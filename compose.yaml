@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=rocketseat'
+      - 'POSTGRES_USER=teste123456'
+      - 'POSTGRES_PASSWORD=123456'
+    ports:
+      - '4321:5432'
